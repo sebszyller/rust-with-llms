@@ -92,6 +92,19 @@ X. **Question:** how do you tell?
 
 ## Part II (WIP)
 
+2.1. **Question:** How to provide inline type hints?
+**Answer:** ✅ `::<T>`.
+
+2.2. **Question:** How to use `struct`?
+**Answer:** ✅ Got a good example with some explanations.
+
+2.3. **Question:** A bunch of questions regaridng collections, e.g. `zip`, `sum`.
+**Answer:** ✅ I think overall good examples of working with collections but often I'd look up more info in the documentation.
+
+2.4. **Question:** How to use regex? How to parse strings to numbers?
+**Answer:** ✅/❌ Got fairly basic info without really explaining what is going on.
+**Notes:** Searching around for examples and using the docs was much better than what ChatGPT gave me.
+
 X. **Question:** how do you tell?
 **Answer:** can't tell
 **Notes:** none
