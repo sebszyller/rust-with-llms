@@ -7,13 +7,13 @@ pub fn day_two() -> Result<(), Error> {
     let from_file = read_text().unwrap();
 
     let games: Vec<Game> = from_file.iter().map(game_to_struct).collect();
-    // let zipped: Vec<(&String, &Game)> = from_file.iter().zip(games.iter()).collect();
     let mut id_accum = 0;
     let mut total_power = 0;
-    // for (gf, g) in zipped {
-        // println!("Game {} | R: {} G: {} B: {}", g.id, g.reds.iter().sum::<u32>(), g.greens.iter().sum::<u32>(), g.blues.iter().sum::<u32>());
+
     for g in games.iter() {
-        let power_mult = g.reds.iter().max().unwrap() * g.greens.iter().max().unwrap() * g.blues.iter().max().unwrap();
+        let power_mult = g.reds.iter().max().unwrap()
+            * g.greens.iter().max().unwrap()
+            * g.blues.iter().max().unwrap();
         total_power += power_mult;
         if g.valid {
             id_accum += g.id;
@@ -39,7 +39,7 @@ struct Game {
     reds: Vec<u32>,
     greens: Vec<u32>,
     blues: Vec<u32>,
-    valid: bool
+    valid: bool,
 }
 
 fn game_to_struct(str: &String) -> Game {
@@ -66,7 +66,7 @@ fn game_to_struct(str: &String) -> Game {
         reds: reds,
         greens: greens,
         blues: blues,
-        valid: valid_game
+        valid: valid_game,
     }
 }
 
@@ -91,8 +91,4 @@ fn extract_colour_with_re(str: &str, colour: &str) -> u32 {
         None => 0 as u32,
     };
     count
-}
-
-fn minimum_possible(g: &Game) -> u32 {
-    1
 }
