@@ -1,12 +1,14 @@
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 use clap::{Arg, ArgMatches, Command};
 
 use day1::day_one;
 use day2::day_two;
 use day3::day_three;
+use day4::day_four;
 
 fn main() -> Result<(), std::io::Error> {
     let args: ArgMatches = cli().get_matches();
@@ -16,6 +18,7 @@ fn main() -> Result<(), std::io::Error> {
         "1" => day_one(),
         "2" => day_two(),
         "3" => day_three(),
+        "4" => day_four(),
         _ => Ok(println!("That's a weird day: {}", day)),
     }
 }

@@ -53,7 +53,7 @@ fn traverse(engine: &Vec<Vec<char>>) -> (u64, u64) {
                     number_end = j - 1;
 
                     let slice: String = row[number_start..=number_end].iter().collect();
-                    let parsed = parse_to_u32(&slice);
+                    let parsed = parse_to_u64(&slice);
                     let (touching_p1, stars_loc) =
                         is_touching(i, number_start, number_end, &engine);
                     // part 1
@@ -71,7 +71,7 @@ fn traverse(engine: &Vec<Vec<char>>) -> (u64, u64) {
             if (j == right_idx) && number_mode {
                 number_end = j;
                 let slice: String = row[number_start..=number_end].iter().collect();
-                let parsed = parse_to_u32(&slice);
+                let parsed = parse_to_u64(&slice);
                 let (touching_p1, stars_loc) = is_touching(i, number_start, number_end, &engine);
                 // part 1
                 if touching_p1 {
@@ -178,7 +178,7 @@ fn is_star(c: &char) -> bool {
     c == &'*'
 }
 
-fn parse_to_u32(s: &str) -> u64 {
+fn parse_to_u64(s: &str) -> u64 {
     s.parse::<u64>().unwrap()
 }
 
