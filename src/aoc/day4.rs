@@ -22,9 +22,10 @@ pub fn day_four() -> Result<(), Error> {
         accum += count_points(matching_numbers(&card));
         cards.push(card);
     }
-    let total_cards = count_cards(&cards, &cards);
+    let (total_cards, total_calls) = count_cards(&cards, &cards);
     println!("Part I: {}", accum);
     println!("Part II: {}", total_cards);
+    println!("Part II calls: {}", total_calls);
     Ok(())
 }
 
@@ -95,18 +96,21 @@ fn count_points(matching_nums: Vec<&u32>) -> u32 {
     }
 }
 
-fn count_cards(held_cards: &Vec<Card>, all_cards: &Vec<Card>) -> u32 {
+fn count_cards(held_cards: &Vec<Card>, all_cards: &Vec<Card>) -> (u32, u32) {
     let in_hand = held_cards.len() as u32;
 
-    let mut follow_ups: u32 = 0;
+    let mut follow_ups: u32 = 1;
+    let mut total_calls: u32 = 1;
     for c in held_cards.iter() {
         let mn: u32 = matching_numbers(c).len() as u32;
         if mn != 0 {
             let start: usize = c.nr as usize;
             let end: usize = (c.nr + mn) as usize;
             let card_subset: Vec<Card> = all_cards[start..end].to_vec(); // implicit clone() :(
-            follow_ups += count_cards(&card_subset, all_cards)
+            let (fu, tc) = count_cards(&card_subset, all_cards);
+            follow_ups += fu;
+            total_calls += tc;
         }
     }
-    in_hand + follow_ups
+    (in_hand + follow_ups, total_calls)
 }

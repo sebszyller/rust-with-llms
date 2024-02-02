@@ -5,7 +5,7 @@ Provided text is not verbatim because that would be too long, and no screenshots
 
 It's divided into three parts:
 1. Part I:
-2. Part II (Coming soon!)
+2. Part II (WIP / Coming soon!)
 3. Part III (Coming soon!)
 
 ## Part I
@@ -86,10 +86,6 @@ Quite backwards.
 **Answer:** ✅ For the most part, I think it was quite good at telling my how to do index and condition -based operations.
 I did some additional searches when I wanted to look at the documentation.
 
-X. **Question:** how do you tell?
-**Answer:** can't tell
-**Notes:** none
-
 ## Part II (WIP)
 
 2.1. **Question:** How to provide inline type hints?
@@ -105,7 +101,51 @@ X. **Question:** how do you tell?
 **Answer:** ✅/❌ Got fairly basic info without really explaining what is going on.
 **Notes:** Searching around for examples and using the docs was much better than what ChatGPT gave me.
 
-X. **Question:** how do you tell?
+2.5. **Question:** Unpacking a tuple with explicit type annotations
+**Answer:** ❌ some hallucinated code that doesn't work, tells me that you can provide these but then the documentation says that you cannot lol.
+
+2.6. **Question:** Indexing vectors, continuous slice out of a vector
+**Answer:** ✅ Good, documentation-like examples of what's out there.
+
+2.7. **Question:** Can you have multiple lines per pattern matching statement?
+**Answer:** ✅ Yes, with an example.
+
+2.8. **Question:** `HashSet` and upserting into a `HashMap`.
+**Answer:** ✅ `HashSet` all good.
+`HashMap` example was confusing but workable.
+Used the documentation on the side.
+
+2.9. **Question:** Slice into fixed-size array.
+**Answer:** ❌ unrelated answer.
+**Notes:** This is what I wanted [link](https://stackoverflow.com/questions/37668886/slice-to-fixed-size-array).
+
+2.10. **Question:** Build string in a loop.
+**Answer:** ✅ gave me a good example with `push_str`.
+
+2.11. **Question:** Cloning a slice of a vector of structs.
+**Answer:** ✅/❌ Gave me a generic cloning example.
+But I had a `Vec<struct>` so that didn't work.
+When I pointed that out (and Googled) it told me that I need to derive some traits for my `struct` so that you can clone them.
+*Fine* but I had to know what to prompt to get the answer.
+
+2.12. **Question:** How to measure the elapsed time for a block of code? How to profile time and performance of a program?
+**Answer:** The former, good enough with `Instant::time`.
+The latter, also fine I guess? Some standard tools like `valgrind`, `perf` and `flamegraph`.
+Also, told me to try `cargo profiler`.
+
+X. **Question:** X
+**Answer:** can't tell
+**Notes:** none
+
+X. **Question:** X
+**Answer:** can't tell
+**Notes:** none
+
+X. **Question:** X
+**Answer:** can't tell
+**Notes:** none
+
+X. **Question:** X
 **Answer:** can't tell
 **Notes:** none
 
