@@ -4,11 +4,11 @@ These are not *super detailed* unless it calls for it.
 Provided text is not verbatim because that would be too long, and no screenshots either unless needed.
 
 It's divided into three parts:
-1. Part I:
-2. Part II (WIP / Coming soon!)
-3. Part III (Coming soon!)
+1. Part I-A: Initial exploration
+2. Part I-B Advent of Code
+3. Part II (Coming soon!)
 
-## Part I
+## Part I-A
 
 1.1. **Question:** How to select from and run multiple `main` files in rust?
 
@@ -86,7 +86,7 @@ Quite backwards.
 **Answer:** ✅ For the most part, I think it was quite good at telling my how to do index and condition -based operations.
 I did some additional searches when I wanted to look at the documentation.
 
-## Part II (WIP)
+## Part I-B
 
 2.1. **Question:** How to provide inline type hints?
 **Answer:** ✅ `::<T>`.
@@ -132,22 +132,6 @@ When I pointed that out (and Googled) it told me that I need to derive some trai
 **Answer:** The former, good enough with `Instant::time`.
 The latter, also fine I guess? Some standard tools like `valgrind`, `perf` and `flamegraph`.
 Also, told me to try `cargo profiler`.
-
-X. **Question:** X
-**Answer:** can't tell
-**Notes:** none
-
-X. **Question:** X
-**Answer:** can't tell
-**Notes:** none
-
-X. **Question:** X
-**Answer:** can't tell
-**Notes:** none
-
-X. **Question:** X
-**Answer:** can't tell
-**Notes:** none
 
 ## Part III
 
