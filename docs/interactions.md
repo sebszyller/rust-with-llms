@@ -226,15 +226,19 @@ I got some basic explanation that were satisfactory.
 3.8. **Question:** I was trying to figure out how to use channels to queue up operations to the sqlite database because it's single-write.
 
 **Answer:** 🚫 I got some weird wrapper code around database operations that didn't really make sense to me.
+Also, it wasn't working.
 
 **Notes:** I was prodding ChatGPT to explain to me what I need the wrapper for exactly, and it kept spamming me with walls of text.
 Also, it had trouble singling out a piece of code and rewriting it (from a bigger block) unless I explicitly supplied the peace to be rewritten.
+*Eventually*, I managed to get it closer to the code in this repo (`async/main.rs`) but it defo would have been easier if I didn't bother with the LLM.
 
-3.x. **Question:** abc
+3.9. **Question:** How to use PyO3?
 
-**Answer:** ijk
+**Answer:** 🚫 Of course use `maturin` and some code examples.
 
-**Notes:** xyz
+**Notes:** All outdated.
+The way it recommends to scaffold the project is very different from the official docs.
+I just used the documentation.
 
 3.x. **Question:** abc
 
