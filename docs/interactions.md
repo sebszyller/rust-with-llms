@@ -240,11 +240,11 @@ Also, it had trouble singling out a piece of code and rewriting it (from a bigge
 The way it recommends to scaffold the project is very different from the official docs.
 I just used the documentation.
 
-3.x. **Question:** abc
+3.10. **Question:** How to use `workspaces`?
 
-**Answer:** ijk
+**Answer:** ✅/🚫 So it sort of gave me a basic working example but then I wanted to setup the directory structure that you have in this repo; combining `lib.rs` and `main.rs`s and it struggled.
 
-**Notes:** xyz
+**Notes:** I resorted to just browsing the docs.
 
 3.x. **Question:** abc
 

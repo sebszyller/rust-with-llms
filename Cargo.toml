@@ -1,2 +1,2 @@
 [workspace]
-members = ["aoc", "async", "pyo3"]
+members = ["aoc", "async", "py"]
