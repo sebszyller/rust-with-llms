@@ -246,6 +246,40 @@ I just used the documentation.
 
 **Notes:** I resorted to just browsing the docs.
 
+3.10. **Question:** I had some questions regarding `HashMap` and `Iterator`.
+
+**Answer:** ✅/🚫 Ok to get the basic gist.
+I then had to use the documentation to see what's out there.
+
+3.11. **Question:** Lifetimes with borrowed `HashMap` and `Vec`.
+
+**Answer:** ✅ Actually, surprisingly good.
+
+**Notes:** For `PyO3`, I wanted a fast `Dict[str, List[str]]` intersection.
+I wanted to minimise moving and copying, and the compiler itself was good enough for that.
+But then I wanted to squeeze even more efficiency out of it, and I ran into lifetimes.
+ChatGPT helped me write a reasonable version.
+Then I tried to push it even more, and it told me not to (because I'm going to pollute my types with lifetimes and it'd be iffy), yet showed me how to do it.
+It worked!
+
+3.x. **Question:** abc
+
+**Answer:** ijk
+
+**Notes:** xyz
+
+3.x. **Question:** abc
+
+**Answer:** ijk
+
+**Notes:** xyz
+
+3.x. **Question:** abc
+
+**Answer:** ijk
+
+**Notes:** xyz
+
 3.x. **Question:** abc
 
 **Answer:** ijk
