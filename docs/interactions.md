@@ -229,7 +229,7 @@ I got some basic explanation that were satisfactory.
 Also, it wasn't working.
 
 **Notes:** I was prodding ChatGPT to explain to me what I need the wrapper for exactly, and it kept spamming me with walls of text.
-Also, it had trouble singling out a piece of code and rewriting it (from a bigger block) unless I explicitly supplied the peace to be rewritten.
+Also, it had trouble singling out a piece of code and rewriting it (from a bigger block) unless I explicitly supplied the piece to be rewritten.
 *Eventually*, I managed to get it closer to the code in this repo (`async/main.rs`) but it defo would have been easier if I didn't bother with the LLM.
 
 3.9. **Question:** How to use PyO3?
@@ -262,26 +262,3 @@ ChatGPT helped me write a reasonable version.
 Then I tried to push it even more, and it told me not to (because I'm going to pollute my types with lifetimes and it'd be iffy), yet showed me how to do it.
 It worked!
 
-3.x. **Question:** abc
-
-**Answer:** ijk
-
-**Notes:** xyz
-
-3.x. **Question:** abc
-
-**Answer:** ijk
-
-**Notes:** xyz
-
-3.x. **Question:** abc
-
-**Answer:** ijk
-
-**Notes:** xyz
-
-3.x. **Question:** abc
-
-**Answer:** ijk
-
-**Notes:** xyz
